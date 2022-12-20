@@ -1,7 +1,7 @@
 weight = int(input("Enter your weight: "))
 height = float(input("Enter your height: "))
 
-bmi = weight / height ** 2
+bmi = weight / (height ** 2)
 print("BMI = " + str(bmi))
 
 if(bmi < 18.5):
