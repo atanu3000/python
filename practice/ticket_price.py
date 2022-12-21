@@ -6,6 +6,8 @@ if height > 120:
         bill = 5
     elif age < 18:
         bill = 7
+    elif age >= 45 and age <= 55:
+        bill = 0
     else:
         bill = 12
 
@@ -14,6 +16,7 @@ if height > 120:
     if photo == "Y" or photo == "y":
         bill += 3
     
+
     print(f"Your bill is ${bill}")
 
 else:
