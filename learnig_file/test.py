@@ -16,7 +16,33 @@
 # a.extend(["e", "f", "g"])
 # print(a)
 
-name = input("Enter the names: ")
-print(name)
+# name = input("Enter the names: ")
+# print(name)
+
+# fruits = ["apple", "mango", "lemon", "grape"]
+# for fruit in fruits:
+#     print(fruit)
+
+# height = input("Inout a list of student heights: ").split()
+# for n in range(0, len(height)):
+#     height[n] = int(height[n])
+# print(height)
+
+# max = 0
+# for h in height:
+#     type(h)
+#     if int(max) < int(h):
+#         max = h
+
+# print(f"Max: {max}")
+
+total = 0
+for num in range(1, 101, 2):
+    # if num %2 == 0:
+    print(num)
+    total += num
+
+
+print(f"Total of even numbers: {total}")
 
 
