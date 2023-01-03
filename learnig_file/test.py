@@ -36,13 +36,35 @@
 
 # print(f"Max: {max}")
 
-total = 0
-for num in range(1, 101, 2):
-    # if num %2 == 0:
-    print(num)
-    total += num
+# total = 0
+# for num in range(1, 101, 2):
+#     # if num %2 == 0:
+#     print(num)
+#     total += num
 
 
-print(f"Total of even numbers: {total}")
+# print(f"Total of even numbers: {total}")
+
+# count = 5
+# while count > 0:
+#     print(count) 
+#     count -= 1
+
+def add(a, b):
+    return a + b
+def sub(a, b):
+    if a > b:
+        return a - b
+    else:
+        return b - a
+    
+a = int(input("Enter 1st number: "))
+b = int(input("Enter 2nd number: "))
+c = add(a, b)
+print(f"addition: {c}")
+d = sub(a, b)
+print(f"difference: {d}")
+
+
 
 
