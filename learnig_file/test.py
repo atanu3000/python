@@ -50,21 +50,38 @@
 #     print(count) 
 #     count -= 1
 
-def add(a, b):
-    return a + b
-def sub(a, b):
-    if a > b:
-        return a - b
-    else:
-        return b - a
+# def add(a, b):
+#     return a + b
+# def sub(a, b):
+#     if a > b:
+#         return a - b
+#     else:
+#         return b - a
     
-a = int(input("Enter 1st number: "))
-b = int(input("Enter 2nd number: "))
-c = add(a, b)
-print(f"addition: {c}")
-d = sub(a, b)
-print(f"difference: {d}")
+# a = int(input("Enter 1st number: "))
+# b = int(input("Enter 2nd number: "))
+# c = add(a, b)
+# print(f"addition: {c}")
+# d = sub(a, b)
+# print(f"difference: {d}")
 
+# import math
+# a, b = 40, 3
+# print(a+b)
+# print(a-b)
+# print(a*b)
+# print(a/b)
+# print(math.ceil(a/b))
+# print(round(a/b))
+# print(a//b)
+# print(a**b)
 
-
-
+programing_dictionary = {
+    "bug": "Video provides a powerful way to help you prove your point. ",
+    "bug1": "When you click Online Video, you can paste in the embed code for the video you want to add. ",
+    "bud2": "You can also type a keyword to search online for the video that best fits your document."
+}
+# print(programing_dictionary)
+for thing in programing_dictionary:
+    print(thing)
+    print(programing_dictionary[thing])
