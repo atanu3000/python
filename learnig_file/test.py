@@ -76,12 +76,54 @@
 # print(a//b)
 # print(a**b)
 
-programing_dictionary = {
-    "bug": "Video provides a powerful way to help you prove your point. ",
-    "bug1": "When you click Online Video, you can paste in the embed code for the video you want to add. ",
-    "bud2": "You can also type a keyword to search online for the video that best fits your document."
-}
-# print(programing_dictionary)
-for thing in programing_dictionary:
-    print(thing)
-    print(programing_dictionary[thing])
+# programing_dictionary = {
+#     "bug": "Video provides a powerful way to help you prove your point. ",
+#     "bug1": "When you click Online Video, you can paste in the embed code for the video you want to add. ",
+#     "bud2": "You can also type a keyword to search online for the video that best fits your document."
+# }
+# # print(programing_dictionary)
+# for thing in programing_dictionary:
+#     print(thing)
+#     print(programing_dictionary[thing])
+
+#   ----- distionary problems -----
+# d = {'simple_key' : 'hello'}
+# print(d['simple_key'])
+
+# d = {'k1' : {'k2' : 'hello'}}
+# print(d['k1']['k2'])
+
+# d = {'k1': [{'nest_key' : ['this is deep',['hello']]}]}
+# print(d['k1'][0]['nest_key'][1][0])
+
+# d = {'k1' : [1, 2, {'k2': ['this is tricky', {'though' : [1, 2, ['hello']]}]}]}
+# print(d['k1'][2]['k2'][1]['though'][2][0])
+
+# list3 = [1,2,[3,4,'hello']]
+# list3[2][2] = 'goodbye'
+# print(list3)
+
+# a = [1, 2, 3, 4]
+# b = a[:]    # "[:]" is  means a new list is assigned in 'b' as same as 'a' 
+# a[0] = 10
+# print(a)
+# print(b)
+
+# l = [1, 2, 3, 4]
+# print(*l)
+# print(l[::])
+
+st = 'Print only the words that start with s in this sentence'
+
+for ch in st.split():
+    if ch[0] == 's':
+        print(ch)
+
+
+
+# print("atanu\n" * 10 )
+
+# if __name__ == main:
+#     print("yes")
+# else:
+#     print("nO")
