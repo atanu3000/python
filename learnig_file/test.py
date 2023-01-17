@@ -113,13 +113,25 @@
 # print(*l)
 # print(l[::])
 
-st = 'Print only the words that start with s in this sentence'
+# st = 'Print only the words that start with s in this sentence'
 
-for ch in st.split():
-    if ch[0] == 's':
-        print(ch)
+# for ch in st.split():
+#     if ch[0] == 's':
+#         print(ch)
 
+#  <--------- Animal Crackers --------->
+def animal_cracker(str):
+    str = str.split()
+    # print(str[0][0])
+    # print(str[1][0])
+    if str[0][0] == str[1][0]:
+        return True
+    else:
+        return False
 
+print(animal_cracker('Levelheaded Llama'))
+
+print(animal_cracker('Crazy Kangaroo'))
 
 # print("atanu\n" * 10 )
 
