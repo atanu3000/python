@@ -120,18 +120,168 @@
 #         print(ch)
 
 #  <--------- Animal Crackers --------->
-def animal_cracker(str):
-    str = str.split()
-    # print(str[0][0])
-    # print(str[1][0])
-    if str[0][0] == str[1][0]:
-        return True
-    else:
-        return False
+# def animal_cracker(str):
+#     str = str.split()
+#     # print(str[0][0])
+#     # print(str[1][0])
+#     if str[0][0] == str[1][0]:
+#         return True
+#     else:
+#         return False
 
-print(animal_cracker('Levelheaded Llama'))
+# print(animal_cracker('Levelheaded Llama'))
 
-print(animal_cracker('Crazy Kangaroo'))
+# print(animal_cracker('Crazy Kangaroo'))
+
+# def almost_there(num):
+#     if num >= 90 and num <= 110:
+#         return True
+#     elif num >= 190 and num <= 210:
+#         return True
+#     else:
+#         return False
+
+# print(almost_there(104))
+# print(almost_there(150))
+# print(almost_there(209))
+
+# def has_33(nums):
+#     i = 0
+#     for num in nums:
+#         if num == 3:
+#             if nums[i+1] == 3:
+#                 return True
+#             else:
+#                 return False
+#         i += 1
+
+# list = [3, 1 , 3]
+# print(has_33(list))
+
+# a = 13
+# b = 3
+
+# add = a + b
+# sub = a - b
+# mul = a * b
+# div1 = a / b
+# div2 = a // b
+# mod = a % b
+# power = a ** b
+
+# print(add)
+# print(sub)
+# print(mul)
+# print(div1)
+# print(div2)
+# print(mod)
+# print(power)
+
+# a = 10
+# b = a
+# print(a)
+
+# b += a
+# print(b)
+
+# b -= a
+# print(b)
+
+# b *= a
+# print(b)
+
+# b <<= a
+# print(b)
+
+# a = 10
+# b = 30
+
+# print(a > b)
+
+# print(a < b)
+
+# print(a == b)
+
+# print(a != b)
+
+# print(a >= b)
+
+# print(a <= b)
+
+# a = True
+# b = False
+# x = 10
+
+# print(a and b)
+  
+# print(a or b)
+  
+# print(not a)
+
+# print(x < 5 and a < 15)
+# print(x < 5 or a < 15)
+# print(not(x < 5 and a < 15))
+
+# a = 10
+# b = 20
+# c = a
+  
+# print(a is not b)
+# print(a is c)
+
+# a = 10
+# b = 4
+
+# print(a & b)
+
+# print(a | b)
+
+# print(~a)
+
+# print(a ^ b)
+
+# print(a >> 2)
+
+# print(a << 2)
+
+# x = 24
+# y = 20
+# list = [10, 20, 30, 40, 50]
+  
+# if (x not in list):
+#     print("x is NOT in list")
+# else:
+#     print("x is in list")
+  
+# if (y in list):
+#     print("y is in list")
+# else:
+#     print("y is NOT in list")
+
+# list = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+# print(list)
+# for i in list:
+#     for j in i:
+#         print(j, " ", end="")
+#     print()
+
+class node:
+    def __init__(self, a , b):
+         self.a = a
+         self.b = b 
+    def sum(self, b):
+        return self + b
+
+res = node.sum(2, 5) 
+print(res)
+        
+
+# x = 29
+# print(x >> 1)
+
+# a = 10
+# b = -a
+# print(b)
 
 # print("atanu\n" * 10 )
 
