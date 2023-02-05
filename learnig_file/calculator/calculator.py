@@ -1,4 +1,4 @@
-# from art import logo
+from art import logo
 def add(n1, n2):
     return n1 + n2
 def sub(n1, n2):
@@ -10,7 +10,7 @@ def div(n1, n2):
 
 calculate = {"+": add, "-": sub, "*": mul, "/": div}
 def calculator():
-    # print(logo)
+    print(logo)
     num1 = int(input("Enter the 1st number:"))
 
     for i in calculate:
