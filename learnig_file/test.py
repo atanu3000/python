@@ -265,15 +265,38 @@
 #         print(j, " ", end="")
 #     print()
 
-class node:
-    def __init__(self, a , b):
-         self.a = a
-         self.b = b 
-    def sum(self, b):
-        return self + b
+############## with using init ##############
 
-res = node.sum(2, 5) 
-print(res)
+# class node:
+#     def __init__(self, a , b):
+#          self.a = a
+#          self.b = b 
+#     def sum(self):
+#         return self.a + self.b
+
+# res = node(2,5).sum() 
+# print(res)
+
+############## without using init ##############
+
+# class node:
+#     def sum(self, a, b):
+#         self.a = a
+#         self.b = b
+#         return(self.a + self.b)
+
+# res = node().sum(10,20)
+# print(res)
+
+# for number in range(1, 101):
+#     if number % 3 == 0 and number % 5 == 0:
+#         print("FizzBuzz")
+#     elif number % 3 == 0 :
+#         print("Fizz")
+#     elif number % 5 == 0 :
+#         print("Buzz")
+#     else: 
+#         print(number)
         
 
 # x = 29
@@ -288,4 +311,36 @@ print(res)
 # if __name__ == main:
 #     print("yes")
 # else:
-#     print("nO")
+#     print("no")
+
+class Employee:
+    promotion = 1.04
+    def __init__(self, f_name, l_name, pay):
+        self.f_name = f_name
+        self.l_name = l_name
+        self.email = f_name + "." + l_name + "@gmail.com"
+        self.pay = pay
+        self.promotion = Employee.promotion
+    
+    def apply_raise(self):
+        self.promotion = 1.05
+        self.pay *= self.promotion
+    
+emp_1 = Employee("atanu", "paul", 60000)
+emp_2 = Employee("rohit", "mondal", 50000)
+
+# print(emp_1.__dict__)
+# print(emp_2.__dict__)
+
+# print(emp_1.pay)
+emp_1.apply_raise()
+# print(emp_1.pay)
+
+print(emp_1.promotion)
+print(emp_2.promotion)
+print(emp_1.__dict__)
+print(emp_2.__dict__)
+# print(emp_1.promotion)
+
+# emp_1.promotion = 1.05
+# print(emp_1.__dict__)
