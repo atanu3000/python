@@ -313,34 +313,36 @@
 # else:
 #     print("no")
 
-class Employee:
-    promotion = 1.04
-    def __init__(self, f_name, l_name, pay):
-        self.f_name = f_name
-        self.l_name = l_name
-        self.email = f_name + "." + l_name + "@gmail.com"
-        self.pay = pay
-        self.promotion = Employee.promotion
+# class Employee:
+#     promotion = 1.04
+#     def __init__(self, f_name, l_name, pay):
+#         self.f_name = f_name
+#         self.l_name = l_name
+#         self.email = f_name + "." + l_name + "@gmail.com"
+#         self.pay = pay
+#         self.promotion = Employee.promotion
     
-    def apply_raise(self):
-        self.promotion = 1.05
-        self.pay *= self.promotion
+#     def apply_raise(self):
+#         self.promotion = 1.05
+#         self.pay *= self.promotion
     
-emp_1 = Employee("atanu", "paul", 60000)
-emp_2 = Employee("rohit", "mondal", 50000)
+# emp_1 = Employee("atanu", "paul", 60000)
+# emp_2 = Employee("rohit", "mondal", 50000)
 
+# # print(emp_1.__dict__)
+# # print(emp_2.__dict__)
+
+# # print(emp_1.pay)
+# emp_1.apply_raise()
+# # print(emp_1.pay)
+
+# print(emp_1.promotion)
+# print(emp_2.promotion)
 # print(emp_1.__dict__)
 # print(emp_2.__dict__)
+# # print(emp_1.promotion)
 
-# print(emp_1.pay)
-emp_1.apply_raise()
-# print(emp_1.pay)
+# # emp_1.promotion = 1.05
+# # print(emp_1.__dict__)
 
-print(emp_1.promotion)
-print(emp_2.promotion)
-print(emp_1.__dict__)
-print(emp_2.__dict__)
-# print(emp_1.promotion)
 
-# emp_1.promotion = 1.05
-# print(emp_1.__dict__)
