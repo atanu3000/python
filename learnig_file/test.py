@@ -345,4 +345,41 @@
 # # emp_1.promotion = 1.05
 # # print(emp_1.__dict__)
 
+# list = ['a', 'b', 'c', 'd', 'e']
+# print(list.index('d'))
 
+list_1 = ['abcde', 'fghij', 'klmno', 'pqrst', 'uvwxy']
+for i in list_1:
+    for j in i:
+        print(j, "", end="")
+    print()
+
+elm = input("Find the position of a element: ")
+
+# x = y = 0
+# a = b = 0
+# for i in list:
+#     y = 0
+#     for j in i:
+#         if j == elm:
+#             a, b = x ,y
+#         y += 1
+#     x += 1
+
+a = b = 0
+for i in list_1:
+    list_2 = list(i)
+    if elm in list_2:
+        b = list_2.index(elm)
+        break
+    a += 1
+        
+print("\nsearch for: ", elm)
+
+for i in range(b):
+    print(list_1[a][i], "", end="")
+
+print()
+
+for i in range(a):
+    print(list_1[i][b], "", end="")
