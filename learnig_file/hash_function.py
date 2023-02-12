@@ -15,10 +15,14 @@ def ascii(str):
     sum %= 100
     return sum
 
+c = 0
+
 def hash(str, num):
+    c = 0
     ascii_1 = ascii(str)
     while(num > 0):
-        while True:
+        while True: 
+            c += 1
             new_str = []
             for i in str:
               new_str.append(random.choice(letter_list))
@@ -30,7 +34,7 @@ def hash(str, num):
                 break
         num -= 1
     string_dict[ascii(str)] = name 
-            
+    print("No. of itaration: ", c)
 
-hash("atanu",5)
+hash("rohit",5)
 print(string_dict)

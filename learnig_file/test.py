@@ -348,38 +348,71 @@
 # list = ['a', 'b', 'c', 'd', 'e']
 # print(list.index('d'))
 
-list_1 = ['abcde', 'fghij', 'klmno', 'pqrst', 'uvwxy']
-for i in list_1:
-    for j in i:
-        print(j, "", end="")
-    print()
-
-elm = input("Find the position of a element: ")
-
-# x = y = 0
-# a = b = 0
-# for i in list:
-#     y = 0
+# list_1 = ['abcde', 'fghij', 'klmno', 'pqrst', 'uvwxy']
+# for i in list_1:
 #     for j in i:
-#         if j == elm:
-#             a, b = x ,y
-#         y += 1
-#     x += 1
+#         print(j, "", end="")
+#     print()
 
-a = b = 0
-for i in list_1:
-    list_2 = list(i)
-    if elm in list_2:
-        b = list_2.index(elm)
-        break
-    a += 1
+# elm = input("Find the position of a element: ")
+
+# # x = y = 0
+# # a = b = 0
+# # for i in list:
+# #     y = 0
+# #     for j in i:
+# #         if j == elm:
+# #             a, b = x ,y
+# #         y += 1
+# #     x += 1
+
+# a = b = 0
+# for i in list_1:
+#     list_2 = list(i)
+#     if elm in list_2:
+#         b = list_2.index(elm)
+#         break
+#     a += 1
         
-print("\nsearch for: ", elm)
+# print("\nsearch for: ", elm)
 
-for i in range(b):
-    print(list_1[a][i], "", end="")
+# for i in range(b):
+#     print(list_1[a][i], "", end="")
 
-print()
+# print()
 
-for i in range(a):
-    print(list_1[i][b], "", end="")
+# for i in range(a):
+#     print(list_1[i][b], "", end="")
+
+# def add_user():
+#     n = int(input("Enter number of user: "))
+#     dic = {}
+#     for i in range(1, n+1):
+#         dic1 = {}
+#         dic1['name'] = input(f"{i}. User name: ")
+#         dic1['id'] = input(f"     User id: ")
+#         dic[i] = dic1
+    
+#     for row in dic:
+#         print(dic[row])
+
+# add_user()
+
+# lower_list =['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'k', 'l', 'm',
+# 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+
+# upper_list = [i.upper() for i in lower_list]
+
+import string
+
+alphabet = string.ascii_lowercase
+print(alphabet)
+l_list = list(str(alphabet))
+print(l_list)
+# alphabet = list(alphabet)
+# # print(upper_list)
+# print(l_list)
+# res = ""
+# for i in lower_list:
+print(type(alphabet))
+print(type(l_list))
