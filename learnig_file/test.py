@@ -403,16 +403,97 @@
 
 # upper_list = [i.upper() for i in lower_list]
 
-import string
+# import string
 
-alphabet = string.ascii_lowercase
-print(alphabet)
-l_list = list(str(alphabet))
-print(l_list)
-# alphabet = list(alphabet)
-# # print(upper_list)
+# alphabet = string.ascii_lowercase
+# print(alphabet)
+# l_list = list(str(alphabet))
 # print(l_list)
-# res = ""
-# for i in lower_list:
-print(type(alphabet))
-print(type(l_list))
+# # alphabet = list(alphabet)
+# # # print(upper_list)
+# # print(l_list)
+# # res = ""
+# # for i in lower_list:
+# print(type(alphabet))
+# print(type(l_list))
+
+# python program to convert into decimal number system
+# s1 = "17"
+# s2 = "1110010"
+# s3 = "1c2"
+ 
+# n1 = int(s1, 8)
+# print('Octal 17 = ', n1)
+# n2 = int(s2, 2)
+# print('Binary 1110010 = ', n2)
+# n3 = int(s3, 16)
+# print('Hexadecimal 1c2 = ', n3)
+
+# n = int(100,2)
+# print(n)
+
+######### IMPORTANT CODES #########
+
+# a = 10
+# b = bin(a)
+# print(b[2::])
+
+# print(type(b))
+
+# import math as m
+# a = m.ceil(4.0)
+# print(a)
+# a = m.(4.0)
+# print(a)
+
+# a = "atanu"
+# # b = "12345678"
+# print(b[:-len(b)+1:-1])
+# print(b[2::])
+# print(len(a))
+
+# ------------------- Factorial using recursion -------------------
+
+# def fact(num):
+#     if num == 0 or  num == 1:
+#         return 1
+#     return num * fact(num-1)
+
+# print(f'Factorial = {fact (int (input ("Enter a number: ") ) ) }')
+
+# ------------------- Exponenstial -------------------
+
+# def exp(base, pow):
+#     if pow == 0:
+#         return 1
+    
+#     return base * exp(base, pow-1)
+
+# print(f'Answer: {exp(int(input("Enter base: ")), int(input("Enter power: ")))}')
+
+# ------------------- Fibonacci Series -------------------
+
+# def fibonacci(n):
+#     # pass
+#     if n <= 1:
+#         return n
+#     else:
+#         return(fibonacci(n-1) + fibonacci(n-2))
+    
+# term = int(input("Enter the term: "))
+
+# if term <= 0:
+#     print("Enter any positive integer")
+# else:
+#     print("Fibonacci Sequence: ")
+#     for i in range(term):
+#         print(fibonacci(i), "",end="")
+
+# ------------------- GCD of a number -------------------
+
+def gcp(a, b):
+    if b == 0:
+        return a
+    return gcp(b, a%b)
+
+print(f'GCP is: {gcp(int(input("Enter first num: ")), int(input("Enter second num: ")))}')

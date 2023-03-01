@@ -1,11 +1,17 @@
-a = input("a: ")
-b = input("b: ")
+a = int(input("a: "))
+b = int(input("b: "))
 
-c = a
-a = b
-b = c
+# c = a
+# a = b
+# b = c
 
-print("a = " + a)
-print("b = " + b)
+# a, b = b, a
 
-print(type(a))
+a = a + b   # without using third variable   
+b = a - b
+a = a - b
+
+
+print("a = " , a)
+print("b = " , b)
+
