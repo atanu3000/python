@@ -491,9 +491,53 @@
 
 # ------------------- GCD of a number -------------------
 
-def gcp(a, b):
-    if b == 0:
-        return a
-    return gcp(b, a%b)
+# def gcp(a, b):
+#     if b == 0:
+#         return a
+#     return gcp(b, a%b)
 
-print(f'GCP is: {gcp(int(input("Enter first num: ")), int(input("Enter second num: ")))}')
+# print(f'GCP is: {gcp(int(input("Enter first num: ")), int(input("Enter second num: ")))}')
+
+# def volume(l, b = 5, h = 7):
+#     vol = l * b * h
+#     return vol
+
+# ans = volume(10)
+# print("The volume is: ", ans)
+    
+# from math import pi, sqrt
+# print(round(pi, 2))
+# print(int(sqrt(81)))
+
+# import sys
+# a = int(sys.argv[1])
+# b = int(sys.argv[2])
+
+# sum = a + b
+# print("Sum = ", sum)
+
+# print(sys.argv)
+
+# import __builtin__
+# print(dir(__builtin__))
+
+# print(dir(__builtins__))
+# print(__name__)
+# if __name__ == '__main__':
+#     print("Hello World")
+
+# with open('swap.py', 'w') as s:
+#     s.write("import test\n")
+#     s.write("print(f'The module name is: {__name__}')")
+
+# import os
+# os.rename('swap.py', 'swap_num.py')
+# print("File renamed")
+
+# os.rmdir('file.py')
+
+a = 'Hello'
+index = 0
+for i in a:
+    print(f'a[{index}] = {i}')
+    index += 1
