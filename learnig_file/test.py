@@ -536,8 +536,29 @@
 
 # os.rmdir('file.py')
 
-a = 'Hello'
-index = 0
-for i in a:
-    print(f'a[{index}] = {i}')
-    index += 1
+# a = 'Hello'
+# index = 0
+# for i in a:
+#     print(f'a[{index}] = {i}')
+#     index += 1
+
+# s = set()
+# print(type(s))
+# s = {1, 2, 3, 4}
+# print(type(s))
+# s = set([1,2,3])
+# print(type(s))
+# print(s)
+
+list = [1, 1, 2, 2, 2, 3, 4, 4]
+# print(list)
+
+# print(set(list))
+
+set = set(list)
+print(set)
+
+set.add(5)
+# set.add([6, 7])  # this is a type error
+set.update([6, 7])
+print(set)
