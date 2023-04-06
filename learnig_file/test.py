@@ -550,15 +550,43 @@
 # print(type(s))
 # print(s)
 
-list = [1, 1, 2, 2, 2, 3, 4, 4]
-# print(list)
+# list = [1, 1, 2, 2, 2, 3, 4, 4]
+# # print(list)
 
-# print(set(list))
+# # print(set(list))
 
-set = set(list)
-print(set)
+# set = set(list)
+# print(set)
 
-set.add(5)
-# set.add([6, 7])  # this is a type error
-set.update([6, 7])
-print(set)
+# set.add(5)
+# # set.add([6, 7])  # this is a type error
+# set.update([6, 7])
+# print(set)
+
+# dict = {1: 'a', 2: 'b', 3: 'c', 2: 'd'}
+# # print(dict)
+
+# dict2 = dict
+# print(dict2)
+
+dict = {1: 'A', True: 'B', 2: 'C', 3: 'D'}
+# dict = {1: 'a', 1: 'b'}
+
+# print(dict[1])
+
+# print(hash(1))
+# print(hash(True))
+# # dict.clear()
+
+dict2 = dict.copy()
+
+# print(dict2)
+# print(dict2.items())
+# print(dict2.values())
+
+# for items in dict:
+#     print(dict[items])
+
+
+dict.clear()
+print(dict)
