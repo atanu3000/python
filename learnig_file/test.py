@@ -578,7 +578,7 @@ dict = {1: 'A', True: 'B', 2: 'C', 3: 'D'}
 # print(hash(True))
 # # dict.clear()
 
-dict2 = dict.copy()
+# dict2 = dict.copy()
 
 # print(dict2)
 # print(dict2.items())
@@ -588,5 +588,31 @@ dict2 = dict.copy()
 #     print(dict[items])
 
 
-dict.clear()
-print(dict)
+# dict.clear()
+# print(dict)
+
+# class demo:
+#     num = 10
+
+#     def __init__(self, name, roll):
+#         self.name = name
+#         self.roll = roll
+
+# print(demo.num)
+
+# s1 = demo('Atanu', 58)
+# print(s1.name, s1.roll)
+
+class demo: 
+    x = 10
+    def __init__ (self, name, roll):
+        self.name = name
+        self.roll = roll
+        self.x = 100
+
+print(demo.x)
+
+s1 = demo('Atanu', 58)
+print(s1.x)
+print(s1.name)
+print(s1.__dict__)
