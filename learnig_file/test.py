@@ -569,7 +569,7 @@
 # dict2 = dict
 # print(dict2)
 
-dict = {1: 'A', True: 'B', 2: 'C', 3: 'D'}
+# dict = {1: 'A', True: 'B', 2: 'C', 3: 'D'}
 # dict = {1: 'a', 1: 'b'}
 
 # print(dict[1])
@@ -603,16 +603,35 @@ dict = {1: 'A', True: 'B', 2: 'C', 3: 'D'}
 # s1 = demo('Atanu', 58)
 # print(s1.name, s1.roll)
 
-class demo: 
-    x = 10
-    def __init__ (self, name, roll):
-        self.name = name
-        self.roll = roll
-        self.x = 100
+# class demo: 
+#     x = 10
+#     def __init__ (self, name, roll):
+#         self.name = name
+#         self.roll = roll
+#         self.x = 100
 
-print(demo.x)
+# print(demo.x)
 
-s1 = demo('Atanu', 58)
-print(s1.x)
-print(s1.name)
-print(s1.__dict__)
+# s1 = demo('Atanu', 58)
+# print(s1.x)
+# print(s1.name)
+# print(s1.__dict__)
+
+from os import *
+from sys import *
+from collections import *
+from math import *
+
+def findAddedCharacter(s, t):
+    # Write your code here.
+    # pass
+	for item in t:
+		if item not in s:
+			return item
+
+# Main.
+test = int(input())
+for x in range(test):
+	s = input()
+	t = input()
+	print(findAddedCharacter(s, t))
